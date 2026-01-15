@@ -23,3 +23,19 @@ cout<<"Months = "<<month<<endl;
 cout<<"Days = "<<day<<endl;
 return 0;
 }
+/*Optimized solution
+years = total_days / 365
+remaining_days = total_days % 365
+months = remaining_days / 30
+days = remaining_days % 30
+
+   ll year = num / 365;
+    num %= 365;
+    
+    ll month = num / 30;
+    num %= 30;
+
+    ll day = num;
+    লুপ দিলে complexity বাড়ে। O(num)।
+    এটাতে O(1)।
+*/
